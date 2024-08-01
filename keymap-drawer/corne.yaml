@@ -39,7 +39,7 @@ layers:
   - ENTER
   - LGUI
   - '1'
-  - SPACE
+  - {t: SPACE, h: '3'}
   - '2'
   - '3'
   - '3'
