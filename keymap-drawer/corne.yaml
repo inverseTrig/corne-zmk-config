@@ -248,3 +248,5 @@ combos:
   k: Gui+ C
 - p: [28, 29]
   k: Gui+ V
+- p: [14, 15]
+  k: F1

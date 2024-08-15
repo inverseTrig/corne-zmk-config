@@ -376,6 +376,10 @@ path.combo {
 <tspan x="280" dy="-0.6em">Gui+</tspan><tspan x="280" dy="1.2em">V</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">F1</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
@@ -641,6 +645,10 @@ path.combo {
 <tspan x="280" dy="-0.6em">Gui+</tspan><tspan x="280" dy="1.2em">V</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">F1</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-2">
@@ -898,6 +906,10 @@ path.combo {
 <tspan x="280" dy="-0.6em">Gui+</tspan><tspan x="280" dy="1.2em">V</tspan>
 </text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">F1</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-3">
@@ -1145,6 +1157,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">
 <tspan x="280" dy="-0.6em">Gui+</tspan><tspan x="280" dy="1.2em">V</tspan>
 </text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">F1</text>
 </g>
 </g>
 </g>
@@ -1400,6 +1416,10 @@ path.combo {
 <text x="280" y="150" class="combo tap">
 <tspan x="280" dy="-0.6em">Gui+</tspan><tspan x="280" dy="1.2em">V</tspan>
 </text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">F1</text>
 </g>
 </g>
 </g>
