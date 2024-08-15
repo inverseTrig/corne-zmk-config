@@ -144,6 +144,13 @@
             key-positions = <28 29>;
             bindings = <&kp LG(V)>;
         };
+
+        combo_f1 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+            key-positions = <14 15>;
+            bindings = <&kp F1>;
+        };
     };
 
     keymap {
