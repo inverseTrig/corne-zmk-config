@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   default:
-  - TAB
+  - {t: TAB, h: ESC}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: ESC, h: LCTRL}
+  - {t: CAPSLOCK, h: LCTRL}
   - A
   - S
   - D
@@ -37,9 +37,9 @@ layers:
   - .
   - /
   - ENTER
-  - '&td_mt'
+  - LALT
+  - LGUI
   - '1'
-  - SPACE
   - SPACE
   - '2'
   - '3'
@@ -81,8 +81,8 @@ layers:
   - PREV
   - NEXT
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '4'
   - '0'
@@ -124,8 +124,8 @@ layers:
   - BRI DN
   - VOL DN
   - {t: ▽, type: trans}
-  - '4'
   - {t: ▽, type: trans}
+  - '4'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT TOG
   - BT NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,8 +210,8 @@ layers:
   - BT CLR
   - BT PRV
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -240,3 +240,11 @@ combos:
   k: )
 - p: [36, 37]
   k: Gui+LALT
+- p: [25, 26]
+  k: Gui+Z
+- p: [26, 27]
+  k: Gui+X
+- p: [27, 28]
+  k: Gui+C
+- p: [28, 29]
+  k: Gui+V
