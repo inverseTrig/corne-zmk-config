@@ -188,6 +188,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Qwerty";
             bindings = <
 &kp TAB        &kp Q         &kp W         &kp E            &kp R      &kp T       &kp Y         &kp U      &kp I             &kp O         &kp P            &kp BSPC
 &mt LCTRL ESC  &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D    &kp F      &kp G       &kp H         &kp J      &hm_l LCTRL K     &hm_l LALT L  &hm_l LGUI SEMI  &kp SQT
@@ -197,6 +198,7 @@
         };
 
         layer_1 {
+            display-name = "Num";
             bindings = <
 &kp GRAVE  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5              &kp N6     &kp N7      &kp N8     &kp N9    &kp N0      &kp BSLH
 &trans     &trans    &trans     &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE          &kp LEFT   &kp N4      &kp N5     &kp N6    &kp C_MUTE  &kp C_PLAY_PAUSE
@@ -206,6 +208,7 @@
         };
 
         layer_2 {
+            display-name = "Sym";
             bindings = <
 &trans  &trans  &trans  &kp UNDER    &kp PLUS    &kp LPAR     &kp RPAR   &kp HOME   &kp UP     &kp END       &trans         &kp DEL
 &trans  &trans  &trans  &kp EQUAL    &kp MINUS   &kp LBKT     &kp RBKT   &kp LEFT   &kp DOWN   &kp RIGHT     &kp C_BRI_UP   &kp C_VOL_UP
@@ -215,6 +218,7 @@
         };
 
         layer_3 {
+            display-name = "Fn";
             bindings = <
 &kp F12    &kp F1   &kp F2  &kp F3   &kp F4   &kp F5    &kp F6     &kp F7   &kp F8   &kp F9    &kp F10   &kp F11
 &trans     &trans   &trans  &trans   &trans   &trans    &trans     &trans   &trans   &trans    &trans    &trans
@@ -224,6 +228,7 @@
         };
 
         layer_4 {
+            display-name = "BT";
             bindings = <
 &trans     &trans   &trans  &trans   &trans   &trans    &trans     &trans   &trans   &trans    &trans      &out OUT_TOG
 &trans     &trans   &trans  &trans   &trans   &trans    &trans     &trans   &trans   &trans    &trans      &bt BT_NXT
