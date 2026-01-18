@@ -22,6 +22,7 @@
 #define LAYER4  4
 #define MOUSE   5
 #define SCROLL  6
+#define SNIPE   7
 
 #define COMBO_TIMEOUT 20
 #define COMBO_PRIOR_IDLE 75
@@ -32,6 +33,11 @@
     scroller {
         layers = <SCROLL>;
         input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_scaler 1 8>, <&zip_xy_to_scroll_mapper>;
+    };
+
+    sniper {
+        layers = <SNIPE>;
+        input-processors = <&zip_xy_scaler 1 4>;
     };
 };
 
@@ -246,7 +252,7 @@
                         display-name = "Mouse";
                         bindings = <
         &trans  &trans  &trans     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
-        &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+        &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SNIPE &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
         &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
                                    &trans     &trans     &trans    &trans  &trans     &trans
             >;
@@ -259,6 +265,21 @@
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   |     |     |     |
                         display-name = "Scroll";
+                        bindings = <
+        &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+        &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+        &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+                                   &trans     &trans     &trans    &trans  &trans     &trans
+            >;
+        };
+
+        snipe_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
+                        display-name = "Snipe";
                         bindings = <
         &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
         &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
