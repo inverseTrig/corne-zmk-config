@@ -28,7 +28,7 @@
 #define COMBO_PRIOR_IDLE 75
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer MOUSE 1000>;
+    input-processors = <&zip_ble_report_rate_limit>, <&zip_temp_layer MOUSE 1000>;
 
     scroller {
         layers = <SCROLL>;
