@@ -239,13 +239,13 @@
 
         mouse_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |SCRL |     |   |     |SCRL |     |     |     |      |
+// |      |     |     |  F3 |SCRL |     |   |     |SCRL |     |     |     |      |
 // |      |     | RCK | MCK | LCK |     |   |     | LCK | MCK | RCK |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   |     |     |     |
                         display-name = "Mouse";
                         bindings = <
-        &trans  &trans  &trans     &trans     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
+        &trans  &trans  &trans     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
         &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
         &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
                                    &trans     &trans     &trans    &trans  &trans     &trans
