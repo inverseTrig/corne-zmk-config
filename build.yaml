@@ -1,14 +1,15 @@
 ---
 include:
   - board: nice_nano
-    shield: corne_central_left
+    shield: corne_left
+
   - board: nice_nano
-    shield: corne_peripheral_left
+    shield: corne_right
+
   - board: nice_nano
-    shield: corne_peripheral_right
-  - board: nice_nano
-    shield: settings_reset
-  - board: nice_nano
-    shield: corne_central_dongle dongle_display
+    shield: corne_central_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  - board: nice_nano
+    shield: settings_reset

@@ -1,14 +1,8 @@
-/*
- * Copyright (c) 2020 Pete Johanson
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "corne.dtsi"
 
 &kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
-        
+
     col-gpios
         = <&pro_micro 21 GPIO_ACTIVE_HIGH>
         , <&pro_micro 20 GPIO_ACTIVE_HIGH>

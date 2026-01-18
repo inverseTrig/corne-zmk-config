@@ -5,6 +5,14 @@
  */
 
 #include "corne.dtsi"
+<<<<<<< HEAD
+=======
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&trackball_peripheral_listener {
+  status = "okay";
+};
+>>>>>>> 32eacee (feat: first commit)
 
 / {
     chosen {
@@ -39,8 +47,9 @@
     };
 };
 
+<<<<<<< HEAD
 &pinctrl {
-    spi0_default: spi0_default {
+    spi3_default: spi3_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 24)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 22)>,
@@ -48,7 +57,7 @@
         };
     };
 
-    spi0_sleep: spi0_sleep {
+    spi3_sleep: spi3_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 24)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 22)>,
@@ -60,12 +69,15 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-&spi0 {
+&spi3 {
     status = "okay";
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-0 = <&spi3_default>;
+    pinctrl-1 = <&spi3_sleep>;
     pinctrl-names = "default", "sleep";
+=======
+&spi1 {
+>>>>>>> 32eacee (feat: first commit)
     cs-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
