@@ -1,22 +1,18 @@
 manifest:
   defaults:
-    revision: v0.3
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: inverseTrig
+      url-base: https://github.com/inverseTrig
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
+    - name: zmk-config
+      remote: inverseTrig
       revision: main
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: main
+      import: config/west.yml
   self:
     path: config
