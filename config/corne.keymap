@@ -251,9 +251,9 @@
 //                    |     |     |     |   |     |     |     |
                         display-name = "Mouse";
                         bindings = <
-        &trans  &trans  &trans     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
-        &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SNIPE &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-        &trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+        &trans      &trans  &trans     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
+        &to DEFAULT &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SNIPE &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+        &trans      &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
                                    &trans     &trans     &trans    &trans  &trans     &trans
             >;
         };
