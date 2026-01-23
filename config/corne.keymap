@@ -188,6 +188,13 @@
             key-positions = <14 15>;
             bindings = <&kp F1>;
         };
+
+        combo_f4 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+            key-positions = <16 17>;
+            bindings = <&kp F4>;
+        };
     };
 
     keymap {
@@ -245,13 +252,13 @@
 
         mouse_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |  F3 |SCRL |     |   |     |SCRL |     |     |     |      |
+// |      |     |  F4 |  F3 |SCRL |     |   |     |SCRL |     |     |     |      |
 // |      |     | RCK | MCK | LCK |     |   |     | LCK | MCK | RCK |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   |     |     |     |
                         display-name = "Mouse";
                         bindings = <
-        &trans      &trans  &trans     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
+        &trans      &trans  &kp F4     &kp F3     &mo SCROLL &trans    &trans  &mo SCROLL &trans     &trans     &trans  &trans
         &to DEFAULT &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mo SNIPE &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
         &trans      &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
                                    &trans     &trans     &trans    &trans  &trans     &trans
